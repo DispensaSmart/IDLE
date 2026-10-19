@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <title>Portale Rotto</title>
+  <meta name="description" content="Gioco idle: Goku combatte da solo, Rick apre i portali e Torcio torna carico di bottino.">
+  <meta name="theme-color" content="#16111f">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Portale Rotto">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header class="hud">
+      <div class="hud-left">
+        <div class="lvl-badge"><span id="hud-level">1</span></div>
+        <div>
+          <div class="hud-title">Portale Rotto</div>
+          <div class="hud-power">⚡ <span id="hud-power">0</span></div>
+        </div>
+      </div>
+      <div class="hud-res">
+        <span title="Oro">🪙 <b id="hud-gold">0</b></span>
+        <span title="Rottami">⚙️ <b id="hud-scrap">0</b></span>
+        <span title="Gemme">💎 <b id="hud-gems">0</b></span>
+      </div>
+    </header>
+    <div class="xp"><div id="xp-fill"></div></div>
+    <section class="battle"><canvas id="battle"></canvas></section>
+    <main id="panel"></main>
+    <nav id="tabs"></nav>
+  </div>
+  <div id="defense" class="hidden"></div>
+  <div id="modal" class="hidden"><div id="modal-body"></div></div>
+  <div id="toasts"></div>
+  <noscript>Per giocare serve JavaScript.</noscript>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
